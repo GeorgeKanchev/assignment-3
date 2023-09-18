@@ -26,14 +26,16 @@
 
 ### Features
 
+- An unstyle 'no page found' component is added when user navigates to a route that doesn't exist
 - A lower res callout image is display under a specific breakpoint
 - 2 tests are added, one of them verifies if 4 steps are displayed and they're in specific order
 - Font sizes, spacing, padding, layout is adjusted at specific breakpoints to utilize available space
 - Steps are sorted by order, the most recent content version is used and previous content is removed
 - A leading zero is added for each step number
 - Specific font is downloaded and included with the application
-- TypeScript is added
-- Prettier is added
+- Fallback
+- TypeScript support is added
+- Prettier support is added
 
 ## Prettier
 

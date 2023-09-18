@@ -1,6 +1,56 @@
-# Getting Started with Create React App
+# Endless assignment projects
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Notes, Decisions, Setup, Features
+
+### Notes
+
+- A good practice for API calling is to abstract the logic. This will help with API URL and standardize error handling. Not done here to not overengineer.
+- @TODO notes are relevant for what I thought could be improved.
+- TypeScript is not requested but added. I think it's necessary in modern applications.
+- Comments are added in places where a description could help.
+- No external libraries like Bootstrap or Lodash are used.
+- Some packages should be updated, but this machine had older `react-scripts` and some other global ones. As a compromise, I've resolved the `critical` vulnerability packages and left the `high` vulnerability ones.
+
+### Decisions
+
+- Folder structure is organized by purpose
+- Favicon is not provided and default is removed
+- CSS files are included with each main component and child components do not have separate CSS files, this is intentional
+
+### Setup
+
+1. `npm install`
+2. `npm start`
+3. `npm test`
+4. (not required) `.ENV` file can be created with `REACT_APP_API` variable that points to a different API
+
+### Features
+
+- An unstyle 'no page found' component is added when user navigates to a route that doesn't exist
+- A lower res callout image is display under a specific breakpoint
+- 2 tests are added, one of them verifies if 4 steps are displayed and they're in specific order
+- Font sizes, spacing, padding, layout is adjusted at specific breakpoints to utilize available space
+- Steps are sorted by order, the most recent content version is used and previous content is removed
+- A leading zero is added for each step number
+- Specific font is downloaded and included with the application
+- Fallback
+- TypeScript support is added
+- Prettier support is added
+
+## Prettier
+
+`.prettierc.json` - contains rules to be overriden
+`.prettierignore` - Prettier won't format this content
+
+For VS Code, create this file for autoformatting
+
+```
+// .vscode/settings.json
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}
+```
 
 ## Available Scripts
 

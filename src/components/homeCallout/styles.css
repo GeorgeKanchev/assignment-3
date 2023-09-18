@@ -1,0 +1,73 @@
+.home-callout__wrapper {
+  background: url("../../assets/images/photo-couch_2x.jpg") no-repeat center;
+  background-size: cover;
+  height: calc(100vh - 500px);
+  max-width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+#home-callout__content {
+  align-items: flex-start;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
+
+.home-callout__heading {
+  font-family: "LatoRegular";
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.home-callout__title {
+  font-family: "LatoLight";
+  font-size: 55px;
+  font-weight: lighter;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.home-callout__p {
+  font-family: "LatoRegular";
+  margin-bottom: 31px;
+  width: 65%;
+}
+
+.home-callout__button {
+  background-color: rgb(79, 227, 193);
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-family: "LatoBold";
+  font-size: 18px;
+  font-weight: 500;
+  padding: 14px 35px;
+  text-transform: uppercase;
+  transition: 0.2s ease-in-out;
+}
+
+.home-callout__button:hover {
+  background-color: rgba(79, 227, 193, 0.5);
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .home-callout__title {
+    font-size: 38px;
+  }
+
+  .home-callout__p {
+    width: 80%;
+  }
+
+  .home-callout__heading {
+    font-size: 16px;
+  }
+
+  .home-callout__wrapper {
+    background: url("../../assets/images/photo-couch.jpg") no-repeat center;
+  }
+}

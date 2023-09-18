@@ -71,3 +71,13 @@
     background: url("../../assets/images/photo-couch.jpg") no-repeat center;
   }
 }
+
+@media (max-width: 414px) {
+  .home-callout__wrapper {
+    height: calc(75vh);
+  }
+
+  #home-callout__content {
+    margin-bottom: 32px;
+  }
+}
